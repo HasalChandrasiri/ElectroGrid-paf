@@ -158,7 +158,7 @@ public class Report
 						if (con == null){
 							return "Error while connecting to the database for deleting."; 
 							} 
-						// create a prepared statement
+						// create a prepared statement 
 						String query = "delete from consumption_report where reportID=?"; 
 						PreparedStatement preparedStmt = con.prepareStatement(query); 
 						// binding values
