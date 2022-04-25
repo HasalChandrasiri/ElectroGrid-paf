@@ -1,6 +1,7 @@
 package model; 
 import java.sql.*; 
 
+
 public class Report 
 { //A common method to connect to the DB
 		private Connection connect(){ 
@@ -20,7 +21,7 @@ public class Report
 						return con; 
 			} 
 		
-		
+		//Inserting a new report
 		public String insertReport(String reportNo, String category, String units, String reportdescription){ 
 			
 					String output = ""; 
@@ -60,7 +61,7 @@ public class Report
 			} 
 		
 		
-		
+			//Reading existing reports
 			public String readReports(){ 
 				
 					String output = ""; 
@@ -112,7 +113,7 @@ public class Report
 						return output; 
 						} 
 			
-			
+			//Updating a report
 			public String updateReport(String ID, String No, String category, String units, String description){ 
 				
 					String output = ""; 
@@ -147,7 +148,7 @@ public class Report
 					return output; 
 			} 
 			
-			
+			//Deleting a report
 			public String deleteReport(String reportID){ 
 				
 					String output = ""; 
