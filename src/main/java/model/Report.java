@@ -1,6 +1,7 @@
 package model; 
 import java.sql.*; 
 
+
 public class Report 
 { //A common method to connect to the DB
 		private Connection connect(){ 
